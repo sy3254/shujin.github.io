@@ -23,10 +23,10 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
 
-      - name: Build the book
-        run: |
-           jupyter-book clean .
-           jupyter-book build .
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _build/html
     
 
       - name: Upload artifact
