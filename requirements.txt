@@ -1,0 +1,11 @@
+ipykernel
+pandas
+plotly
+
+# needed for plotly
+nbformat
+statsmodels
+jupyter-book==1.0.2
+myst-nb==1.1.2
+sphinx==7.3.7
+
